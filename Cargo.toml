@@ -1,0 +1,34 @@
+[package]
+name = "str-bench"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+arcstr = "1.2.0"
+compact_str = "0.9.0"
+ecow = "0.2.3"
+imstr = "0.2.0"
+smartstring = "1.0.1"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "push"
+harness = false
+
+[[bench]]
+name = "clone"
+harness = false
+
+[[bench]]
+name = "iterate"
+harness = false
+
+[[bench]]
+name = "replace"
+harness = false
+
+[[bench]]
+name = "to_string"
+harness = false
